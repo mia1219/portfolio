@@ -1,0 +1,133 @@
+body {
+  margin: 0;
+}
+.logo {
+  text-align: center;
+}
+.image {
+  width: 100%;
+}
+
+/*ナビ*/
+.menu {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  column-gap: 80px;
+}
+.menu li {
+  padding-top: 40px;
+  padding-bottom: 90px;
+  font-size: 18px;
+}
+/*コンセプト*/
+.card-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 100px;
+}
+.card-text {
+  text-align: left;
+  font-size: 16px;
+  padding: 40px;
+  font-size: 16px;
+}
+.card_title {
+  color: #24a8bf;
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.title {
+  color: #24a8bf;
+  text-align: center;
+  font-size: 32px;
+  margin: 0 auto;
+}
+
+.ruby {
+  text-align: center;
+  font-size: 13px;
+  font-weight: bold;
+  margin-top: 8px;
+}
+@media (max-width: 768px) {
+  .card-container {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+/*カード*/
+.card {
+  width: 350px;
+}
+.blog-container {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: calc(350px * 3 + 30px * 2);
+  margin: 0 auto;
+  justify-content: center;
+  gap: 30px;
+}
+@media (max-width: 1024px) {
+  .blog-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .blog-container {
+    grid-template-columns: 1fr;
+  }
+}
+.card_texttitle {
+  font-weight: bold;
+  font-size: 15px;
+}
+.card_text {
+  font-size: 12px;
+}
+/*ボタン*/
+.btn-container {
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 50px;
+}
+.blog_btn {
+  border: solid 1px #24a8bf;
+  padding: 16px 72px;
+  color: #24a8bf;
+  position: relative;
+  text-decoration: none;
+}
+.blog_btn::after {
+  content: "";
+  width: 10px;
+  height: 10px;
+  border-top: solid 1px #24a8bf;
+  border-right: solid 1px #24a8bf;
+  transform: rotate(45deg);
+  position: absolute;
+  margin-top: -5px;
+  top: 50%;
+  right: 20px;
+}
+
+/*フッター*/
+.footer_logo {
+  text-align: center;
+  padding-top: 70px;
+  padding-bottom: 50px;
+}
+footer {
+  background-color: rgb(0, 0, 0);
+  margin: 0 auto;
+  text-align: center;
+}
+.copy {
+  color: #8b8b8b;
+  font-size: 12px;
+  padding-bottom: 30px;
+  margin: 0 auto;
+}
