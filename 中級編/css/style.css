@@ -1,0 +1,47 @@
+html {
+  font-size: 12px;
+}
+.wrapper {
+  width: 100%;
+  max-width: 1360px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+li {
+  list-style: none;
+}
+
+img {
+max-width: 100%;
+}
+/*TOP*/
+
+
+
+/*TOP-product-item*/
+.product-list {
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  gap: 34px;
+}
+
+.link-text{
+    display: block;
+    margin-top: 40px;
+    text-align: center;
+    font-size: 14px;
+
+}
+a:hover{
+    color: #333;
+    text-decoration: none;
+}
+
+/*レスポンシブ*/
+@media screen and (max-width: 900px) {
+    .product-list{
+        grid-template-columns: repeat(2,1fr);
+        gap:40px 20px;
+    }
+}
